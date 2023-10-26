@@ -1,0 +1,2 @@
+local blacklistedTable = {""}
+return blacklistedTable
