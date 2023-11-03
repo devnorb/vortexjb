@@ -1,12 +1,12 @@
 # vortexjb
 A Roblox Jailbreak script with tons of features ;p
 
-Vehicle Mods
-Robbery Notifiers
-Teleports
-Utilities
-Gun Mods
-Misc features
+Vehicle Mods\
+Robbery Notifiers\
+Teleports\
+Utilities\
+Gun Mods\
+Misc features\
 and more!
 
 ```lua
