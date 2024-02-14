@@ -78,7 +78,7 @@ local function robCars()
     ErrorHandler(function()
         for i, v in workspace["CAR ROBBERY"]:GetChildren() do
             local a = v.E2Start.Position or v.WindowBreak.Position or v.Promt2
-            Players.LocalPlayer:WaitForChild("Character"):WaitForChild("HumanoidRootPart").CFrame = CFrame.new(a)
+            Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(a)
             task.wait(0.5)
             fireproximityprompt(v.E2Start.StartRobbery, 1, 3)
             task.wait(0.5)
@@ -111,20 +111,20 @@ local function getTheRice()
             end
         end)
 
-        Players.LocalPlayer:WaitForChild("Character"):WaitForChild("HumanoidRootPart").CFrame =
+        Players.LocalPlayer.Character.HumanoidRootPart.CFrame =
             CFrame.new(-460.54150390625, 379.0788879394531, -800.749267578125)
         task.wait(0.5)
         fireproximityprompt(workspace.GUNS.RiceBag.Over.Sign.BuyPrompt, 1, 3)
         task.wait(0.5)
         robbingRice = true
         Players.LocalPlayer.Backpack:FindFirstChild("RiceBag").Parent = workspace[Players.LocalPlayer.Name]
-        Players.LocalPlayer:WaitForChild("Character"):WaitForChild("HumanoidRootPart").CFrame = CFrame.new(-463, 379, -800)
+        Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-463, 379, -800)
         task.wait(0.3)
         fireproximityprompt(workspace.Map.RandomStuff:GetChildren()[286].Pront.CookPart.ProximityPrompt, 1, 3)
         repeat
             task.wait()
         until rice
-        Players.LocalPlayer:WaitForChild("Character"):WaitForChild("HumanoidRootPart").CFrame = CFrame.new(-566, 253, -764)
+        Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-566, 253, -764)
         if rice == "small" then
             Players.LocalPlayer.Backpack:FindFirstChild("SmallRice").Parent = workspace[Players.LocalPlayer.Name]
         elseif rice == "medium" then
@@ -142,11 +142,11 @@ end
 
 local function robBox()
     ErrorHandler(function()
-        Players.LocalPlayer:WaitForChild("Character"):WaitForChild("HumanoidRootPart").CFrame = CFrame.new(workspace:GetChildren()[19].Box.Handle.Position)
+        Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(workspace:GetChildren()[19].Box.Handle.Position)
         task.wait(0.5)
         fireproximityprompt(workspace:GetChildren()[19].Box.Handle.ProximityPrompt, 1, 3)
         task.wait(0.5)
-        Players.LocalPlayer:WaitForChild("Character"):WaitForChild("HumanoidRootPart").CFrame = CFrame.new(-957.1035766601562, 253.53968811035156,
+        Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-957.1035766601562, 253.53968811035156,
             -969.6851806640625)
         task.wait(0.5)
         Players.LocalPlayer.Backpack.Box.Parent = workspace[Players.LocalPlayer.Name]
